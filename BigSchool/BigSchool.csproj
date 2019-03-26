@@ -196,6 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -205,9 +206,19 @@
     <Compile Include="Migrations\201903260721386_KhoiTaoModel.Designer.cs">
       <DependentUpon>201903260721386_KhoiTaoModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903260828148_CreateTableCourse.cs" />
+    <Compile Include="Migrations\201903260828148_CreateTableCourse.Designer.cs">
+      <DependentUpon>201903260828148_CreateTableCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903260829442_KhoaHoc.cs" />
+    <Compile Include="Migrations\201903260829442_KhoaHoc.Designer.cs">
+      <DependentUpon>201903260829442_KhoaHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\AplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -271,6 +282,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Courses\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -287,6 +299,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903260721386_KhoiTaoModel.resx">
       <DependentUpon>201903260721386_KhoiTaoModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903260828148_CreateTableCourse.resx">
+      <DependentUpon>201903260828148_CreateTableCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903260829442_KhoaHoc.resx">
+      <DependentUpon>201903260829442_KhoaHoc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
